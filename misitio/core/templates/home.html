@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .navbar-custom {
+            background-color: black;
+        } 
+        
+        .bg-custom{
+
+            background-color: black;
+        }
+
+        h1{ 
+            text-align:center;
+        }
+
+        h3{ 
+            text-align:center;
+        }
+
+        h4{
+            text-align:center;
+            margin-right: 0px;
+        }
+        .container-fluid{
+            text-align:center;
+            margin-right: 150px;
+
+        }
+
+        .row{ 
+            text-align:center;
+            margin-right: 150px;
+        }
+
+        .label{ 
+            text-align:center;
+            margin-right: 150px;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NO GAME NO LIFE VENTAS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    {%load static%}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="{% static 'img/icon1.png' %}" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Carrusel javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+</head>
+    <body>
+    
+        {%load static%}
+        <nav class="navbar navbar-expand-sm  navbar-custom">
+            <!-- Brand -->
+            <a class="navbar-brand" href="{% url 'home'%}">
+                <img src="{%static 'img/icon2.png'%}" alt="logo" style="width:80px; " >
+            </a>
+    
+            <!-- Links -->
+            <ul class="navbar-nav ml-lg-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="{%url 'home'%}">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="btn-dropdown-service" data-toggle="dropdown">
+                        Colaboradores
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="http://127.0.0.1:8000/crear_colaborador">Ingresar Colaborador</a>
+                        <a class="dropdown-item" href="http://127.0.0.1:8000/form_mod_colaborador">Modificar Colabodor</a>
+                        <a class="dropdown-item" href="http://127.0.0.1:8000/form_del_colaborador">Eliminar Colaborador</a>
+                    </div>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home'%}">Iniciar Sesion </a>
+                </li>
+    
+            </ul>
+            </nav>
+            <br>
+        <h1>BIENVENIDOS A NO GAME NO LIFE VENTAS</h1>
+        <div class="row">
+            <img src="{% static 'img/fondo1.jpg'%}">
+        </div>
+        
+        <div class="row">
+            <h1>Bienvenido a mi pagina {{nombre_usuario}}</h1>
+
+        </div>
+    <div class="container">
+            
+        <h1> Fondos de No Game No Life </h1>
+        <br>
+        <br>
+    </div>          
+    <div class="container">           
+        <div id="carousel1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel1" data-slide-to="1"></li>
+                <li data-target="#carousel1" data-slide-to="2"></li>
+                <li data-target="#carousel1" data-slide-to="3"></li>
+                <li data-target="#carousel1" data-slide-to="4"></li>
+                </ol>
+    <!-- diapositivas -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="{% static 'img/fondo1.jpg' %}" alt="Computadora #1" style="width:100%;">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{% static 'img/fondo2.jpg' %}" alt="Computadora #2" style="width:100%;">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{% static 'img/fondo3.jpg' %}" alt="Computadora #3" style="width:100%;">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{% static 'img/fondo4.jpg' %}" alt="Computadora #4" style="width:100%;">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{% static 'img/fondo5.jpg' %}" alt="Computadora #5" style="width:100%;">
+            </div>
+            </div>
+            <!-- botones de desplazamiento a izquierda y derecha -->      
+            <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel1" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
+ 
+    </div>
+
+    <div class = "container">
+        <div class row="">
+            <h1>Ingrese sus credenciales</h1>
+
+        </div>
+
+    </div>
+
+    <div class = "row">
+        <form method ="POST" action="#" id="formulario">
+            <div class="form-group">
+                <label for="nombre">Usuario</label>
+                <input type="text" class="form-control" name="nombre" id="nombre">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico: </label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
+            <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
+        </form>
+    </div>
+    <div class="row">
+        <h1>Mostrando Colaboradores</h1>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Rut del colaborador</th>
+                <th scope="col">Fotografia...</th>
+                <th scope="col">Nombre completo</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Direccion</th>
+                <th scope="col">Email</th>
+                <th scope="col">Pais</th>
+                <th scope="col">Contraseña</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for co in colab%}
+                <tr>
+                    <td>{{co.rut}}</td>
+                    <td>{{co.fotografia}}</td>
+                    <td>{{co.nombre}}</td>
+                    <td>{{co.telefono}}</td>
+                    <td>{{co.direccion}}</td>
+                    <td>{{co.email}}</td>
+                    <td>{{co.pais}}</td>
+                    <td>{{co.password}}</td>
+                    <td><a href="{% url 'form_mod_colaborador' ve.patente%}" class="btn btn-primary">Modificar  </a></td>
+                    <td><a href="{% url 'form_del_colaborador' ve.patente%}" class="btn btn-danger">Eliminar </a></td>
+                </tr>
+            {%endfor%}
+
+        </tbody>
+        
+    </table>
+    <a href="http://127.0.0.1:8000/crear_direccion" class="btn btn-primary">Nuevo Vehiculo</a>
+</div>
+
+        
+    </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <hr>
+    
+</body>
+<footer class="page-footer bg-custom">
+
+    <div class="bg-custom">
+        <div class="container">
+            <div class="row py-4 d-flex align-items-center">
+
+                <div class="col-md-12 text-center">
+                    <a href="#"><i class="fab fa-facebook-f text-white mr-4"></i></a>
+                    <a href="#"><i class="fab fa-twitter text-white mr-4"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g text-white mr-4"></i></a>
+                    <a href="#"><i class="fab fa-instagram text-white"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center text-md-left mt-5">
+        
+        <div class="row">
+            <div class="col-md-3 mx-auto mb-3">
+                <h6 class="text-uppercase font-weight-bold">NO GAME NO LIFE EMPRESA</h6>
+                <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 125px; height:2px;">
+                <p class="mt-2">Copyright © 2021 NO GAME NO LIFE VENTAS S.A. Todos los derechos reservados.
+                     Prohibida su copia parcial o total bajo la ley nacional e internacional
+                     <br>
+                     <br>
+                     Cristobal Poblete<br>
+                    </p>
+            </div>
+
+            </div>    
+            <div class="col-md-2 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Enlaces de ayuda</h6>
+                <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 165px; height:2px;">
+                <ul class="list-unstyled">
+
+                    <li class="my-2"><a href="#">Contacto:<br> +56-9 98522390 WhatsApp Privado </a></li>
+                    <li class="my-2"><a href="{% url 'home'%}">Inicio </a></li>
+                    <li class="my-2"><a href="{% url 'home'%}">Colaborador </a></li>
+                </ul>
+
+            </div>    
+        </div>
+        
+    </div>
+
+
+
+
+</footer>
+
+</html>
+</body>
+</html>
